@@ -7,7 +7,7 @@ import venky.project.dsl.skills.handlers.*;
 
 public class FitnessSkillStreamHandler extends SkillStreamHandler {
 
-  public FitnessSkillStreamHandler(Skill skill) {
+  public FitnessSkillStreamHandler() {
     super(Skills.standard()
         .addRequestHandlers(new LaunchRequestHandler(), new ExerciseIntentHandler(), new NutritionIntentHandler(),
             new HelpIntentHandler(), new ExitSkillHandler(), new SessionEndedHandler())

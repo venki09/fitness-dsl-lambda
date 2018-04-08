@@ -19,7 +19,7 @@ public class NutritionIntentHandler implements RequestHandler {
   public Optional<Response> handle(HandlerInput input) {
     return input.getResponseBuilder()
         .withSpeech(Constants.NUTRITION_INTENT_MESSAGE)
-        .withShouldEndSession(false)
+        .withShouldEndSession(true)
         .build();
   }
 }

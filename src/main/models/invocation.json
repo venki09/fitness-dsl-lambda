@@ -1,0 +1,120 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "fitness skill",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "NutritionIntent",
+          "samples": [
+            "How many calories in {food}"
+          ],
+          "slots": [
+            {
+              "name": "food",
+              "type": "AMAZON.Food",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "ExerciseIntent",
+          "samples": [
+            "I ran {distance} {distanceUnit} in {time} {timeUnit}",
+            "I swam {distance} {distanceUnit} in {time} {timeUnit}",
+            "I cycled {distance} {distanceUnit} in {time} {timeUnit}"
+          ],
+          "slots": [
+            {
+              "name": "distance",
+              "type": "AMAZON.NUMBER",
+              "samples": []
+            },
+            {
+              "name": "distanceUnit",
+              "type": "DISTANCE_UNIT",
+              "samples": []
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.NUMBER",
+              "samples": []
+            },
+            {
+              "name": "timeUnit",
+              "type": "TIME_UNIT",
+              "samples": []
+            }
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "DISTANCE_UNIT",
+          "values": [
+            {
+              "name": {
+                "value": "miles"
+              }
+            },
+            {
+              "name": {
+                "value": "kilometers"
+              }
+            },
+            {
+              "name": {
+                "value": "mile"
+              }
+            },
+            {
+              "name": {
+                "value": "kilometer"
+              }
+            }
+          ]
+        },
+        {
+          "name": "TIME_UNIT",
+          "values": [
+            {
+              "name": {
+                "value": "minute"
+              }
+            },
+            {
+              "name": {
+                "value": "minutes"
+              }
+            },
+            {
+              "name": {
+                "value": "hour"
+              }
+            },
+            {
+              "name": {
+                "value": "hours"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

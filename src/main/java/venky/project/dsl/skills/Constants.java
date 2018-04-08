@@ -6,7 +6,7 @@ public class Constants {
   private static String EXERCISE_HELP_MESSAGE = "I ran or biked or swam some miles in some time";
   public static String HELP_MESSAGE = "You can ask me 2 things. " + NUTRITION_HELP_MESSAGE + " or " + EXERCISE_HELP_MESSAGE;
 
-  public static String EXIT_MESSAGE = "Thank you using the fitness skills. Goodbye!";
+  public static String EXIT_MESSAGE = "Thank you for using the fitness skills. Goodbye!";
   public static String WELCOME_MESSAGE = "Welcome to my fitness skill.";
 
   // TODO to be removed. This is just a temporary holder to test intent invocation

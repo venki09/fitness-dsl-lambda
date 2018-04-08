@@ -20,7 +20,7 @@ public class ExerciseIntentHandler implements RequestHandler {
   public Optional<Response> handle(HandlerInput input) {
     return input.getResponseBuilder()
         .withSpeech(Constants.EXERCISE_INTENT_MESSAGE)
-        .withShouldEndSession(false)
+        .withShouldEndSession(true)
         .build();
   }
 }
