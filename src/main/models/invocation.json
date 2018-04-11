@@ -35,11 +35,16 @@
         {
           "name": "ExerciseIntent",
           "samples": [
-            "I ran {distance} {distanceUnit} in {time} {timeUnit}",
-            "I swam {distance} {distanceUnit} in {time} {timeUnit}",
-            "I cycled {distance} {distanceUnit} in {time} {timeUnit}"
+            "I {exercise} {distance} {distanceUnit} in {time} {timeUnit}",
+            "I {exercise} {distance} {distanceUnit} in {time} {timeUnit}",
+            "I {exercise} {distance} {distanceUnit} in {time} {timeUnit}"
           ],
           "slots": [
+            {
+              "name": "exercise",
+              "type": "EXERCISE_TYPE",
+              "samples": []
+            },
             {
               "name": "distance",
               "type": "AMAZON.NUMBER",
@@ -110,6 +115,26 @@
             {
               "name": {
                 "value": "hours"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EXERCISE_TYPE",
+          "values": [
+            {
+              "name": {
+                "value": "ran"
+              }
+            },
+            {
+              "name": {
+                "value": "swam"
+              }
+            },
+            {
+              "name": {
+                "value": "cycled"
               }
             }
           ]
