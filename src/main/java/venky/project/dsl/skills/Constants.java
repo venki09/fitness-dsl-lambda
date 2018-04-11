@@ -11,5 +11,6 @@ public class Constants {
 
   // TODO to be removed. This is just a temporary holder to test intent invocation
   public static String NUTRITION_INTENT_MESSAGE = "hmm so you wanted to ask for nutrition info. Hold on, let me learn how to do that";
+  public static String NUTRITION_INTENT_ERROR_MESSAGE = "hmm I don't know the information about the food you mentioned";
   public static String EXERCISE_INTENT_MESSAGE = "hmm so you want to log your workout. Hold on, let me learn how to do that";
 }
